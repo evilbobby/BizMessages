@@ -1,0 +1,73 @@
+/* Biz-Messages Styles */
+.bizSuccess {
+	color: #00AA00;
+}
+.bizFailure {
+	color: #AA0000;
+}
+.bizFailure ul, .bizSuccess ul {
+	margin: 5px 0;
+	padding: 0 0 0 15px;
+}
+.bizNobullet ul {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 0 0 0 5px;
+}
+.bizBullet ul {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: disc;
+}
+
+.bizMessageClose {
+	/* Close only used if Biz-Message is in a popup */
+	display: none;
+}
+
+/* Biz-Message classes when in a popup */
+DIV.popMasterWrap .bizMessageClose {
+	bottom: 5px;
+	display: block;
+	position: absolute;
+	right: 5px;
+}
+
+DIV.popMasterWrap .bizMessageClose a {
+	font-weight: bold;
+}
+DIV.popMasterWrap .bizMessageClose a:hover {
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+DIV.popMasterWrap .bizFailure, DIV.popMasterWrap .bizSuccess {
+	display: none;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 98%;
+	z-index: 100;
+}
+
+DIV.popMasterWrap .bizFailure {
+	background-color: #DDDDDD;
+	color: #990000;
+	border: solid 3px #AA0000;
+}
+
+DIV.popMasterWrap .bizSuccess {
+	background-color: #DDDDDD;
+	color: #009900;
+	border: solid 3px #00AA00;
+}
+
+DIV.popMasterWrap .bizFailure ul, DIV.popMasterWrap .bizSuccess ul {
+	padding: 0 0 0 25px;
+}
+
+
+/* End Biz-Messages Styles */
